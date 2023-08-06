@@ -1,0 +1,11 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Override default variables before the import
+$black: black;
+$carousel-control-color: $black;
+$carousel-indicator-active-bg: $black;
+
+// Import Bootstrap and its default variables
+// Note: You can prefix paths with ~, as displayed above, to resolve modules from node_modules.
+@import "~bootstrap/scss/bootstrap.scss";
