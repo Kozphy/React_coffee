@@ -1,9 +1,9 @@
 import React from "react";
 import { useState } from "react";
 
-import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
-import Button from 'react-bootstrap/Button';
+import Form from "react-bootstrap/Form";
+import InputGroup from "react-bootstrap/InputGroup";
+import Button from "react-bootstrap/Button";
 
 export default AsideFilter;
 
@@ -52,25 +52,17 @@ function ProductFilter() {
   return filters;
 }
 
-
 function AsideFilter() {
   return (
     <aside className="products-filter col-sm-3">
+      <h2 className="text-center ">Filter</h2>
       <ProductFilter />
       <InputGroup className="mb-3">
-        <Form.Control
-          placeholder="起始價格"
-          aria-label="起始價格"
-        />
+        <Form.Control placeholder="起始價格" aria-label="起始價格" />
         <div className="d-flex justify-content-center align-items-center px-2">
-          <span>
-          ~
-          </span>
+          <span>~</span>
         </div>
-        <Form.Control
-          placeholder="結束價格"
-          aria-label="結束價格"
-        />
+        <Form.Control placeholder="結束價格" aria-label="結束價格" />
       </InputGroup>
       <div className="d-flex justify-content-center">
         <Button variant="primary">篩選</Button>
